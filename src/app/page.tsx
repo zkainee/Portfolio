@@ -1,99 +1,108 @@
 import React from 'react';
+import Image from 'next/image';
+import profilePicture from '../../public/images/profile.png';
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-gray-100 text-gray-900">
-            <header className="bg-white shadow">
-                <nav className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-                    <h1 className="text-3xl font-bold">Portfolio</h1>
-                    <div>
-                        {/* Navigation Links */}
-                        <a href="#about" className="px-4">Over mij</a>
-                        <a href="#projects" className="px-4">Projecten</a>
-                        <a href="#skills" className="px-4">Skills</a>
-                        <a href="#contact" className="px-4">Contact</a>
-                    </div>
-                </nav>
-            </header>
-            <main>
-                <section id="about" className="py-12">
-                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <h2 className="text-2xl font-bold">Over mij</h2>
-                        <p className="mt-4 text-gray-600">
-                            Lorem ipsum dolor sit amet
-                        </p>
-                    </div>
-                </section>
-                <section id="projects" className="bg-white shadow mt-8 py-12">
-                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <h2 className="text-2xl font-bold">Projecten</h2>
-                        {/* Project Items */}
-                        <div className="mt-8">
-                            {/* Repeat this block for each project */}
-                            <div className="mt-4">
-                                <h3 className="text-lg font-bold">Project 1</h3>
-                                <p className="mt-1">Lorem ipsum dolor sit amet</p>
+        <div className="min-h-screen bg-gray-50 text-gray-800">
+            <div className="bg-gray-50 text-gray-800">
+                {/* Hero sectie */}
+                <header className="bg-gradient-to-r from-blue-500 to-teal-400 text-white">
+                    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:flex lg:items-center lg:justify-between lg:px-8">
+                        <div className="lg:flex lg:items-center">
+                            <div className="h-32 w-32 rounded-full overflow-hidden mx-auto lg:mx-0 lg:mr-6">
+                                <Image src={profilePicture} alt="picture" layout="responsive" width={128} height={128}/>
                             </div>
-                        </div>
-                        <div className="mt-8">
-                            {/* Repeat this block for each project */}
-                            <div className="mt-4">
-                                <h3 className="text-lg font-bold">Project 2</h3>
-                                <p className="mt-1">Lorem ipsum dolor sit amet</p>
+                            <div>
+                                <h1 className="text-4xl font-bold">Kaine van Ommeren</h1>
+                                <p className="mt-2 text-xl">Software Engineer</p>
                             </div>
-                        </div>
-                        <div className="mt-8">
-                            {/* Repeat this block for each project */}
-                            <div className="mt-4">
-                                <h3 className="text-lg font-bold">Project 3</h3>
-                                <p className="mt-1">Lorem ipsum dolor sit amet</p>
-                            </div>
+                            {/* Additional content */}
                         </div>
                     </div>
-                </section>
-                <section id="skills" className="py-12">
-                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <h2 className="text-2xl font-bold">Skills</h2>
-                        <p className="mt-4 text-gray-600">
-                            Een lijst met skills die ik beheers
-                        </p>
-                        {/* Skills list */}
-                        <div className="flex flex-wrap mt-4">
-                            {/* Repeat for each skill */}
-                            <span
-                                className="bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Skill Name</span>
-                        </div>
-                        <div className="flex flex-wrap mt-4">
-                            {/* Repeat for each skill */}
-                            <span
-                                className="bg-gray-200 text-gray-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">Skill Name</span>
-                        </div>
+                </header>
+            </div>
+            {/* Over mij sectie */}
+            <section id="about" className="py-12">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-center">Over mij</h2>
+                    <p className="mt-4 text-gray-600 text-lg text-center">
+                        Ik ben een gepassioneerde software engineer met een focus op het creëren van efficiënte, schaalbare applicaties. Met een achtergrond in het beheren, creëren & ervaring in development breng ik oplossingen voor probleemstellingen.</p>
+                </div>
+            </section>
 
+            {/* Skills sectie */}
+            <section id="skills" className="bg-gray-100 py-12">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-center">Skills</h2>
+                    <div className="flex flex-wrap justify-center gap-6 mt-6">
+                        {/* Skill items */}
+                        <div className="bg-white shadow-lg rounded-lg p-6">
+                            <h3 className="font-semibold text-xl">Frontend Development</h3>
+                            <p className="text-gray-600 mt-2">React, TailwindCSS</p>
+                        </div>
+                        <div className="bg-white shadow-lg rounded-lg p-6">
+                            <h3 className="font-semibold text-xl">Backend Development</h3>
+                            <p className="text-gray-600 mt-2">Node.js, Django, Flask</p>
+                        </div>
                     </div>
-                </section>
-                <section id="contact" className="bg-white shadow mt-8 py-12">
-                    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <h2 className="text-2xl font-bold">Neem contact met mij op</h2>
-                        <form className="mt-8">
-                            <div className="mb-4">
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Naam</label>
-                                <input type="text" id="name" className="mt-1 p-2 w-full border shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block sm:text-sm border-gray-300 rounded-md" />
-                            </div>
-                            <div className="mb-4">
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-                                <input type="email" id="email" className="mt-1 p-2 w-full border shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block sm:text-sm border-gray-300 rounded-md" />
-                            </div>
-                            <div className="mb-4">
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-700">Bericht</label>
-                                <textarea id="message" className="mt-1 p-2 w-full border shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block sm:text-sm border-gray-300 rounded-md"></textarea>
-                            </div>
-                            <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                Send
+                </div>
+            </section>
+            {/* Projecten sectie */}
+            <section id="projects" className="py-12">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-center">Projecten</h2>
+                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Project items */}
+                        <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col">
+                            <h3 className="font-semibold text-xl"></h3>
+                            <p className="text-gray-600 mt-2 flex-grow">A brief description of the project, the
+                                challenges faced, and the technologies used.</p>
+                            <a href="#" className="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2">View
+                                Project</a>
+                        </div>
+                        <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col">
+                            <h3 className="font-semibold text-xl">Game | Minecraft</h3>
+                            <p className="text-gray-600 mt-2 flex-grow">In het verleden heb ik me bezig gehouden als zowel Java als Bedrock minecraft development. Dit schreef ik in <strong>Java</strong>, <strong>JSON</strong></p>
+                            <a href="#" className="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2">View
+                                Project</a>
+                        </div>
+                        <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col">
+                            <h3 className="font-semibold text-xl">Game | FiveM</h3>
+                            <p className="text-gray-600 mt-2 flex-grow">Hier werk ik vrijwillig aan een FiveM framework GTA V server als
+                                Full Stack Developer in <strong>Lua</strong>, <strong>React</strong> & <strong>SQL</strong>.</p>
+                            <a href="https://discord.gg/lotusnl" target={'_blank'}
+                               className="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2">View
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            { /* Contact sectie */}
+            <section id="contact" className="bg-gray-100 py-12">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-center">Neem contact op</h2>
+                    <form className="mt-8 grid grid-cols-1 gap-y-6" action="#" method="POST">
+                        <div>
+                            <label htmlFor="name" className="sr-only">Naam</label>
+                            <input type="text" name="name" id="name" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md" placeholder="Name" />
+                        </div>
+                        <div>
+                            <label htmlFor="email" className="sr-only">Email</label>
+                            <input type="email" name="email" id="email" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md" placeholder="Email" />
+                        </div>
+                        <div>
+                            <label htmlFor="message" className="sr-only">Bericht</label>
+                            <textarea id="message" name="message" className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-blue-500 focus:border-blue-500 border border-gray-300 rounded-md" placeholder="Plaats hier uw bericht"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Verstuur
                             </button>
-                        </form>
-                    </div>
-                </section>
-            </main>
+                        </div>
+                    </form>
+                </div>
+            </section>
         </div>
     );
 }

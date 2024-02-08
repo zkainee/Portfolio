@@ -43,7 +43,7 @@ export default function Home() {
                         </div>
                         <div className="bg-white shadow-lg rounded-lg p-6">
                             <h3 className="font-semibold text-xl">Backend Development</h3>
-                            <p className="text-gray-600 mt-2">Node.js, Django, Flask</p>
+                            <p className="text-gray-600 mt-2">Java, C#</p>
                         </div>
                     </div>
                 </div>

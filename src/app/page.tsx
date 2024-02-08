@@ -14,7 +14,7 @@ export default function Home() {
                                 <Image src={profilePicture} alt="picture" layout="responsive" width={128} height={128}/>
                             </div>
                             <div>
-                                <h1 className="text-4xl font-bold">Kaine van Ommeren</h1>
+                                <h1 className="text-4xl font-bold">Kaine</h1>
                                 <p className="mt-2 text-xl">Software Engineer</p>
                             </div>
                             {/* Additional content */}
@@ -55,31 +55,53 @@ export default function Home() {
                     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Project items */}
                         <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col">
-                            <h3 className="font-semibold text-xl"></h3>
-                            <p className="text-gray-600 mt-2 flex-grow">A brief description of the project, the
-                                challenges faced, and the technologies used.</p>
-                            <a href="#" className="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2">View
-                                Project</a>
-                        </div>
-                        <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col">
                             <h3 className="font-semibold text-xl">Game | Minecraft</h3>
-                            <p className="text-gray-600 mt-2 flex-grow">In het verleden heb ik me bezig gehouden als zowel Java als Bedrock minecraft development. Dit schreef ik in <strong>Java</strong>, <strong>JSON</strong></p>
-                            <a href="#" className="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2">View
-                                Project</a>
+                            <p className="text-gray-600 mt-2 flex-grow">In het verleden heb ik me bezig gehouden als
+                                zowel Java als Bedrock Minecraft development. Dit schreef ik
+                                in <strong>Java</strong>, <strong>JSON</strong>& <strong>SQL</strong></p>
+                            <a href="#"
+                               className="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2">Referentie</a>
                         </div>
                         <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col">
                             <h3 className="font-semibold text-xl">Game | FiveM</h3>
-                            <p className="text-gray-600 mt-2 flex-grow">Hier werk ik vrijwillig aan een FiveM framework GTA V server als
-                                Full Stack Developer in <strong>Lua</strong>, <strong>React</strong> & <strong>SQL</strong>.</p>
+                            <p className="text-gray-600 mt-2 flex-grow">Hier werk ik vrijwillig aan een FiveM framework
+                                GTA V server als
+                                Full Stack Developer
+                                in <strong>Lua</strong>, <strong>React</strong>, <strong>TailwindCSS</strong> & <strong>SQL</strong>.</p>
                             <a href="https://discord.gg/lotusnl" target={'_blank'}
-                               className="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2">View
-                                Project</a>
+                               className="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2">Referentie</a>
+                        </div>
+                        <div className="bg-white shadow-lg rounded-lg p-4 flex flex-col">
+                            <h3 className="font-semibold text-xl">Game | FiveM</h3>
+                            <p className="text-gray-600 mt-2 flex-grow">Hier werk ik vrijwillig aan een FiveM framework
+                                GTA V server als
+                                Full Stack Developer
+                                in <strong>Lua</strong>, <strong>React</strong> & <strong>SQL</strong>.</p>
+                            <a href="https://discord.gg/lotusnl" target={'_blank'}
+                               className="mt-4 inline-block bg-blue-500 text-white rounded-lg px-4 py-2">Referentie</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* Skills sectie */}
+            <section id="skills" className="bg-gray-100 py-12">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-3xl font-bold text-center">Ervaringen</h2>
+                    <div className="flex justify-center gap-6 mt-6">
+                        {/* Skill items */}
+                        <div className="bg-white shadow-lg rounded-lg p-6">
+                            <h3 className="font-semibold text-xl">NIXS Entertainment</h3>
+                            <p className="text-gray-600 mt-2">Als Software Developer stagiare hield ik mij bezig met Mobile App Development in <strong>Flutter</strong> & <strong>Dart</strong>.</p>
+                        </div>
+                        <div className="bg-white shadow-lg rounded-lg p-6">
+                            <h3 className="font-semibold text-xl">Prodware</h3>
+                            <p className="text-gray-600 mt-2">Als Allround Systeem Beheerder was ik deel van het Support team in Zaltbommel. </p>
                         </div>
                     </div>
                 </div>
             </section>
             { /* Contact sectie */}
-            <section id="contact" className="bg-gray-100 py-12">
+            <section id="contact" className="py-12">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h2 className="text-3xl font-bold text-center">Neem contact op</h2>
                     <form className="mt-8 grid grid-cols-1 gap-y-6" action="#" method="POST">

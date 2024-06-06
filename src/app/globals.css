@@ -30,4 +30,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .bg-portfolio {
+    background-color: #61676b; /* Customize your blue color */
+  }
 }
